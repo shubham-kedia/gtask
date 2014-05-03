@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Gtask1</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
+	<title>Gtask1</title>
+	<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+	<%= csrf_meta_tags %>
+	<title>Sample Assignment</title>
+	<meta name="title" content="Assignment">
+	<meta name="description" content="Assignment">
+	<meta name="author" content="Shubham kedia">
+	<meta name="description" content="HTML - CSS with d3.js for graphs and charts manipulation and viewable for all type of devices.(Responsive)">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
-
-<%= yield %>
-
+<body data-spy="scroll">
+	<%= render :partial => "layouts/header" %>
+	<%= yield %>
+	<%= render :partial => "layouts/footer" %>
 </body>
 </html>
