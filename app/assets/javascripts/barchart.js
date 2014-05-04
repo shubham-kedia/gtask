@@ -1,8 +1,8 @@
-$(document).ready(function(){
-  function renderChart() {
-
+  function renderChart(jsondata) {
+ var data = jsondata.slice()
 // var data = d3.csv.parse(d3.select('#csv').text());
-data = d3.csv("data/data.csv", function(error, data) {
+// data = d3.csv("assets/images/data/data.csv", function(error, data) {
+data = d3.json(data, function(error, data) {
 
   // Convert strings to numbers.
   // Name,Population (mill),Average Life Expectancy,Area (1000 sq mi),Continent
@@ -84,16 +84,14 @@ barsContainer.append("line")
 .style("stroke", "#000");
 });
 }
-
-renderChart();
-$( window ).resize(function() {
-  $("#barchart1").empty();
-  renderChart();
-});
-function renderChart1() {
+// $( window ).resize(function() {
+//   $("#barchart1").empty();
+//   renderChart();
+// });
+function renderChart1(data) {
 
 // var data = d3.csv.parse(d3.select('#csv').text());
-data = d3.csv("data/data.csv", function(error, data) {
+data = d3.csv("assets/images/data/data.csv", function(error, data) {
 
   // Convert strings to numbers.
   // Name,Population (mill),Average Life Expectancy,Area (1000 sq mi),Continent
@@ -175,9 +173,7 @@ barsContainer.append("line")
 .style("stroke", "#000");
 });
 }
-renderChart1();
-$( window ).resize(function() {
-  $("#barchart2").empty();
-  renderChart1();
-});
-});
+// $( window ).resize(function() {
+//   $("#barchart2").empty();
+//   renderChart1();
+// });

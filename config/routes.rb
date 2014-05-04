@@ -3,10 +3,11 @@ Gtask1::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  get ':controller(/:action(/:id(.:format)))'
-  post ':controller(/:action(/:id(.:format)))'
+  # get ':controller(/:action(/:id(.:format)))'
+  # post ':controller(/:action(/:id(.:format)))'
+
   root 'home#index'
-  get '/index.html#' , to: 'home#index'
+  # get '/index.html#' , to: 'home#index'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
@@ -17,16 +18,11 @@ Gtask1::Application.routes.draw do
   #   resources :products
 
   # Example resource route with options:
-  #   resources :products do
-  #     member do
-  #       get 'short'
-  #       post 'toggle'
-  #     end
-  #
-  #     collection do
-  #       get 'sold'
-  #     end
-  #   end
+    resources :home do
+      collection do
+        get 'barchart'
+      end
+    end
 
   # Example resource route with sub-resources:
   #   resources :products do

@@ -10,12 +10,12 @@
  *
  *= require_self
  *= require bootstrap.min
- *= require mystyle
  *= require bootstrap-datetimepicker.min
  *= require font-awesome
  *= require multiline-chart
  *= require pie-chart
  *= require barchart
  *= require carousel
+ *= require mystyle
  *= require_tree .
  */

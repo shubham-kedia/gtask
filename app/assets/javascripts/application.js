@@ -23,5 +23,6 @@
 //= require multiline-chart
 //= require barchart
 //= require main
+//= require home
 //= require turbolinks
 // require_tree .
