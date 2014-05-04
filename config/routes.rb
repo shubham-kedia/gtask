@@ -21,6 +21,7 @@ Gtask1::Application.routes.draw do
     resources :home do
       collection do
         get 'barchart'
+        get 'multilinechart'
       end
     end
 

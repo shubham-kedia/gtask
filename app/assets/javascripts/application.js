@@ -19,9 +19,6 @@
 //= require bootstrap-datetimepicker.min
 //= require jquery.scrollTo.min
 //= require d3.min
-//= require pie-chart
-//= require multiline-chart
-//= require barchart
 //= require main
 //= require home
 //= require turbolinks

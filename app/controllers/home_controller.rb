@@ -10,10 +10,11 @@ class HomeController < ApplicationController
 		render :text => @b
 	end
 	def multilinechart
-		@m =Multilinechart.all.select('month,expenses')
+		@m =Multilinechart.all.select('month,expenses').to_json
 		# @m =Multilinechart.pluck(:month,:expenses)
-		respond_to do |format|
-			format.js {render :json => {:data => @m}}
-		end
+		# respond_to do |format|
+		# 	format.js {render :json => {:data => @m}}
+		# end
+		render :text => @m
 	end
 end
