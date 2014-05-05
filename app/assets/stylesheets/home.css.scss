@@ -1,3 +1,34 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+.slice text {
+font-size: 16pt;
+font-family: Arial;
+}
+#barchart1,#barchart2{
+  margin-left: -45px;
+  margin-top: 20px;
+}
+#barchart2{
+  margin-top: 40px;
+}
+#multilinechart{
+  margin-left: 30px;
+}
+#mypie{
+  margin-top: 40px;
+  margin-left: 30px;
+}

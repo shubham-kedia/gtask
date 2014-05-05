@@ -12,10 +12,7 @@
  *= require bootstrap
  *= require bootstrap-datetimepicker.min
  *= require font-awesome
- *= require multiline-chart
- *= require pie-chart
- *= require barchart
- *= require mystyle
+ *= require home
  *= require owl.theme
  *= require owl.carousel
  *= require jquery.vegas.min

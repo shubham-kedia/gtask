@@ -266,3 +266,255 @@
       </ul>
     </div>
   </footer>
+<script>
+  jQuery(document).ready(function($) {
+
+  /* ======= Scrollspy ======= */
+  $('body').scrollspy({ target: '#carousel', offset: 400});
+  
+  /* ======= ScrollTo ======= */
+  $('a.scrollto').on('click', function(e){
+
+        //store hash
+        var target = this.hash;
+        
+        e.preventDefault();
+        
+        $('body').scrollTo(target, 800, {offset: -80}, {easing:'easeOutQuad'});
+
+        //Collapse mobile menu after clicking
+        if ($('.navbar-collapse').hasClass('in')){
+         $('.navbar-collapse').removeClass('in').addClass('collapse');
+       }
+
+     });
+  $(function () {
+    $('#myTab a:first').tab('show')
+  });
+  function renderCarousel(){
+    var widths =$(document).width();
+    var front=400;
+    if (widths>992) {
+      widths = 910;
+      // front-= 40;
+      $(".carousel").css("width", widths);
+    }else if (widths<=992 && width>=767) {
+      widths= 740;
+      front-= 60;
+      $(".carousel").css("width", widths);
+    }else if (widths<767) {
+      widths =$(document).width()-20;
+      front-= 80;
+      $(".carousel").css("width", widths);
+    };
+    $('.carousel').carousel(
+      {carouselWidth:widths,carouselHeight:300,directionNav:false,shadow:true,buttonNav:'bullets',frontWidth:front,frontHeight:300
+    });
+  }
+  renderCarousel();
+  $( window ).resize(function() {
+    // $("#mypie").empty();
+    renderCarousel();
+  });
+  $(function() {
+    $('#datetimepicker1').datetimepicker({
+      pickTime: false
+        // format: 'dd/MM/yyyy '
+      });
+  });
+});
+
+  
+</script>
+<style>
+  /*common css*/
+body {
+  font-family: 'Lato', arial, sans-serif;
+  color: #444444;
+  background :#F3F3F3;
+  margin-top :70px;
+}
+a {
+  color: #56bc94;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+a:hover {
+  text-decoration: none;
+  color: #3fa07a;
+}
+.form-control {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.form-control:focus {
+  border-color: #56bc94;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.offset-header {
+  padding-top: 90px;
+}
+/*header css finishes here*/
+/* Header */
+.header {
+  background: #fff;
+  z-index: 9999;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+}
+.header h1.logo {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 28px;
+  max-height: 50px;
+}
+.header h1.logo a {
+  color: #444444;
+}
+.header h1.logo a img {
+  margin-right: 5px;
+  max-height: 50px;
+}
+.header h1.logo .logo-title {
+  vertical-align: middle;
+}
+.header .main-nav button {
+  background: #225742;
+  color: #fff !important;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.header .main-nav button:focus {
+  outline: none;
+}
+.header .main-nav button .icon-bar {
+  background-color: #fff;
+}
+.header .main-nav .nav .nav-item {
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+.header .main-nav .nav .nav-item.active a {
+  color: #56bc94;
+  background: none;
+}
+.header .main-nav .nav .nav-item a {
+  color: #444444;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+}
+.header .main-nav .nav .nav-item a:hover {
+  color: #56bc94;
+  background: none;
+}
+.header .main-nav .nav .nav-item a:focus {
+  outline: none;
+  background: none;
+}
+.header .main-nav .nav .nav-item a:active {
+  outline: none;
+  background: none;
+}
+.header .main-nav .nav .nav-item.active {
+  color: #56bc94;
+}
+.header .main-nav .nav .nav-item.last {
+  margin-right: 0;
+}
+/* Footer css starts here */
+.footer {
+  background: #444444;
+  color: #fff;
+  margin-top: 25px;
+  padding: 15px 0;
+}
+.footer .copyright {
+  color: #b3b3b3;
+  margin-right: 15px;
+}
+.footer .links {
+  margin-bottom: 0;
+}
+.footer .links a {
+  color: #808080;
+}
+.footer .links a:hover {
+  color: #56bc94;
+}
+/*footer ends here*/
+/*general css*/
+.h2-lines{
+  margin-top: 10px;
+  background-color:black;
+  padding-bottom: 3px;
+  width: 100%;
+}
+.title-header{
+  text-align: center;
+  padding-bottom: 5px;
+}
+.img-holder{
+  /*max-height: 300px;*/
+}
+.add-on{
+  display: inline-block;
+  border: 1px solid grey;
+  border-radius: 0px 4px 4px 0px
+}
+.input-append{
+  width: 46%;
+  right: 20px;
+}
+.create.padding{
+  padding-top:50px;
+}
+.tab-pane .content,.content1{
+  padding-top: 15px;
+}
+.content1{
+  line-height: 30px;
+}
+.nav-tabs li{
+  width: 20%;
+  text-align: center;
+}
+/*chart and graphs css*/
+
+/*media queries */
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+  .container{
+    /*width: 700px;*/
+  }
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .container{
+    /*width: 740px;*/
+  }
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /*.container{
+    width: 940px;
+  }*/
+}
+  
+</style>
