@@ -28,3 +28,9 @@
 //= require jasmine_examples/Player
 //= require jasmine_examples/Song
 // require_tree .
+$(function() {
+	$('#datetimepicker1').datetimepicker({
+		pickTime: false
+        // format: 'dd/MM/yyyy '
+      });
+});
