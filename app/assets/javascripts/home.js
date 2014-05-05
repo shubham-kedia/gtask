@@ -251,5 +251,10 @@ arcs.append("svg:text")
 .attr("text-anchor", "middle") 
 .text(function(d, i) { return data[i].label; }); 
 }
-
+$(function() {
+	$('#datetimepicker1').datetimepicker({
+		pickTime: false
+        // format: 'dd/MM/yyyy '
+      });
+});
 });
