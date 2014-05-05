@@ -26,4 +26,6 @@
 //= require smoothscroll.js
 //= require jquery.vegas.min
 //= require template
+//= require jasmine_examples/Player
+//= require jasmine_examples/Song
 // require_tree .
