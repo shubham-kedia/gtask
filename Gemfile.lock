@@ -39,6 +39,12 @@ GEM
     execjs (2.0.2)
     hike (1.2.3)
     i18n (0.6.9)
+    jasmine (2.0.1)
+      jasmine-core (~> 2.0.0)
+      phantomjs
+      rack (>= 1.2.1)
+      rake
+    jasmine-core (2.0.0)
     jbuilder (1.5.3)
       activesupport (>= 3.0.0)
       multi_json (>= 1.2.0)
@@ -53,6 +59,7 @@ GEM
     minitest (4.7.5)
     multi_json (1.9.3)
     mysql2 (0.3.15)
+    phantomjs (1.9.7.0)
     polyglot (0.3.4)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -110,6 +117,7 @@ PLATFORMS
 DEPENDENCIES
   bower-rails
   coffee-rails (~> 4.0.0)
+  jasmine
   jbuilder (~> 1.2)
   jquery-rails
   mysql2

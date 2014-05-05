@@ -1,6 +1,9 @@
 {
   "name": "dsl-generated dependencies",
   "dependencies": {
-    "bootstrap": "latest"
+    "bootstrap": "latest",
+    "d3": "latest",
+    "jquery-knob": "latest",
+    "smoothscroll": "latest"
   }
 }

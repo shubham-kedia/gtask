@@ -2,6 +2,9 @@ class HomeController < ApplicationController
 	def index
 		
 	end
+	def test
+		
+	end
 	def barchart
 		@b = Barchart.all.select('date,jodhpur,bikaner,jaipur').to_json
 		# respond_to do |format|

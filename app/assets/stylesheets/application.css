@@ -9,13 +9,19 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require bootstrap.min
+ *= require bootstrap
  *= require bootstrap-datetimepicker.min
  *= require font-awesome
  *= require multiline-chart
  *= require pie-chart
  *= require barchart
- *= require carousel
  *= require mystyle
+ *= require owl.theme
+ *= require owl.carousel
+ *= require jquery.vegas.min
+ *= require animate.min
+ *= require pixeden-icons
+ *= require styles
+ *= require responsive
  *= require_tree .
  */

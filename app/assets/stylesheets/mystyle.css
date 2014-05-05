@@ -33,7 +33,6 @@ a:hover {
 /*header css finishes here*/
 /* Header */
 .header {
-  padding: 15px 0;
   background: #fff;
   z-index: 9999;
   -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);

@@ -1,1 +1,10 @@
 bower rails gem -> https://github.com/42dev/bower-rails
+bower resources: -> http://www.iconoclastlabs.com/blog/bower-and-rails-4
+								-> http://www.synbioz.com/blog/bower
+								-> http://kaeff.net/posts/sprockets-bower-better-component-packaging-for-rails-asset-pipeline.html
+								
+sample project with bower -> https://github.com/kaeff/bower-rails-sample
+
+stackoverflow issues -> http://stackoverflow.com/questions/16266528/how-to-manage-javascript-dependencies-with-bower-in-rails-apps
+
+About jasmin -> http://jasmine.github.io/2.0/ruby_gem.html

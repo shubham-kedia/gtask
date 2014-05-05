@@ -22,8 +22,11 @@ Gtask1::Application.routes.draw do
       collection do
         get 'barchart'
         get 'multilinechart'
+        get 'test2'
+        # get 'index'
       end
     end
+  get ':controller(/:action(/:id(.:format)))'
 
   # Example resource route with sub-resources:
   #   resources :products do
