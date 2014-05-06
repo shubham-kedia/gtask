@@ -5,7 +5,7 @@ Gtask1::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # get ':controller(/:action(/:id(.:format)))'
   # post ':controller(/:action(/:id(.:format)))'
-
+  mount JasmineRails::Engine => "/specs" if defined?(JasmineRails)
   root 'home#index'
   get '/index' , to: 'home#index'
   # Example of regular route:

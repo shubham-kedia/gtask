@@ -11,13 +11,14 @@
 #   - dist/**/*.js
 #
 src_files:
-  # - assets/application.js
-  - assets/jquery.min.js
-  - assets/jasmine-jquery.js
-  - assets/d3.js
-  - assets/home.js
-  - public/javascripts/jasmine_examples/Player.js
-  - public/javascripts/jasmine_examples/Song.js
+  - assets/application.js
+  # - assets/jquery.min.js
+  # - assets/jasmine-jquery.js
+  # - assets/d3.js
+  # - assets/home.js
+  # - public/javascripts/jasmine_examples/Player.js
+  # - public/javascripts/jasmine_examples/Song.js
+  # - public/javascripts/graph.js
 # stylesheets
 #
 # Return an array of stylesheet filepaths relative to src_dir to include before jasmine specs.
