@@ -5,3 +5,4 @@
  asset 'd3'
  asset 'jquery-knob'
  asset 'smoothscroll'
+ asset 'jasmine-jquery'

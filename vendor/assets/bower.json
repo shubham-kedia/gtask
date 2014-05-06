@@ -4,6 +4,7 @@
     "bootstrap": "latest",
     "d3": "latest",
     "jquery-knob": "latest",
-    "smoothscroll": "latest"
+    "smoothscroll": "latest",
+    "jasmine-jquery": "latest"
   }
 }

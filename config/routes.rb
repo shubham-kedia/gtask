@@ -7,7 +7,7 @@ Gtask1::Application.routes.draw do
   # post ':controller(/:action(/:id(.:format)))'
 
   root 'home#index'
-  # get '/index.html#' , to: 'home#index'
+  get '/index' , to: 'home#index'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
