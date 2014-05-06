@@ -1,28 +1,73 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Ruby version 
 
-Things you may want to cover:
-
-* Ruby version
+   Currently its using Ruby version 2.1
+   Current Rails version is Rails 4.0.2
+   See the <tt>Resources</tt> file for detailed information.
 
 * System dependencies
 
+	 RVM should be installed
+	 Rails Gem is required
+
 * Configuration
+	Use the following commands to configure rails in your system:
+
+		sudo apt-get install ruby
+		sudo apt-get install rubygems
+		sudo gem install rubygems-update
+		sudo update_rubygems
+		sudo gem install webrick
+		sudo gem install mysql2
+		sudo gem install rails
+		sudo apt-get update ; sudo apt-get install curl -y
+
+		\curl -L https://get.rvm.io | bash -s stable
+		echo 'source ~/.rvm/scripts/rvm' >> ~/.bash_aliases && source ~/.bash_aliases
+		rvm requirements
+
+		sudo apt-get --no-install-recommends install build-essential openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev libgdbm-dev ncurses-dev automake libtool bison subversion pkg-config libffi-dev -y
+
+		rvm get head
+		rvm reload
+		rvm install ruby-2.1.1
+		rvm use ruby-2.1.1 --default
+		rvm rubygems current
+		gem install rails
+
+		Or You can use this following link to succesfully install rails gem
+		Install ruby and rails with rvm -> 
+
+		https://www.digitalocean.com/community/articles/how-to-install-ruby-on-rails-on-ubuntu-12-04-lts-precise-pangolin-with-rvm
+
+use this to run rvm source in server:
+source $rvm_path/scripts/rvm\
 
 * Database creation
+	For database initialization use rake db:setub
+	 It will creat db , migrate it and seed it if any seed file is there.
 
 * Database initialization
+	 use rake db:migrate to run migations and use rake db:seed to seed the db.
 
 * How to run the test suite
+
+	To run the rake suite use "rake jasmine". It will automatically be running on port no 8888. We can config different port no from jasmine_helper.rb file.
 
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
+	
+	For deployment use Capistrano with Passenger
 
-* ...
+	Install rails with passenger: ->
+	https://www.digitalocean.com/community/articles/how-to-install-rails-apache-and-mysql-on-ubuntu-with-passenger
 
+	Add swap sapce:
+	https://www.digitalocean.com/community/articles/how-to-add-swap-on-ubuntu-12-04
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+More  structure information can be gathered about project is from <tt>doc</tt> directory in your app root directory.
+Or can use <tt>rake doc:app</tt> to create one.
+Author:
+Shubham
