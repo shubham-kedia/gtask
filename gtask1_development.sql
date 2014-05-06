@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: May 07, 2014 at 12:50 AM
+-- Generation Time: May 07, 2014 at 01:44 AM
 -- Server version: 5.5.37-0ubuntu0.14.04.1
 -- PHP Version: 5.5.9-1ubuntu4
 
@@ -116,6 +116,32 @@ INSERT INTO `multilinecharts` (`id`, `month`, `expenses`, `created_at`, `updated
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `piecharts`
+--
+
+CREATE TABLE IF NOT EXISTS `piecharts` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `label` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `value` int(11) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=6 ;
+
+--
+-- Dumping data for table `piecharts`
+--
+
+INSERT INTO `piecharts` (`id`, `label`, `value`, `created_at`, `updated_at`) VALUES
+(1, 'one', 20, NULL, NULL),
+(2, 'two', 30, NULL, NULL),
+(3, 'three', 20, NULL, NULL),
+(4, 'four', 10, NULL, NULL),
+(5, 'five', 20, NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `schema_migrations`
 --
 
@@ -130,7 +156,8 @@ CREATE TABLE IF NOT EXISTS `schema_migrations` (
 
 INSERT INTO `schema_migrations` (`version`) VALUES
 ('20140503173719'),
-('20140503173735');
+('20140503173735'),
+('20140506195807');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
