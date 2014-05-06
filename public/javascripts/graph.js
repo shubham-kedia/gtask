@@ -1,2 +1,2 @@
-function Graph (argument) {
+function Graph () {
 }

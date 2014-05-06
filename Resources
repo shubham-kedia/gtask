@@ -10,5 +10,5 @@ stackoverflow issues -> http://stackoverflow.com/questions/16266528/how-to-manag
 About jasmine -> http://jasmine.github.io/2.0/ruby_gem.html
 Rails casts ->http://railscasts.com/episodes/261-testing-javascript-with-jasmine?view=asciicast
 
-
-Rails Configuration:
+Other Testing Tools->
+http://danott.co/posts/rails-javascript-testing-using-karma.html
