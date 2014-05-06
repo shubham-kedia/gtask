@@ -214,10 +214,7 @@ h = w+10, //height
 r = w/2, //radius
 color = d3.scale.category20c(); //builtin range of colors
 
-data = [{"label":"one", "value":20},
-{"label":"two", "value":30},
-{"label":"three", "value":30},
-{"label":"four", "value":10}];
+data = d3.json("/home/piechart", function(error, data) {
 var vis = d3.select("#mypie")
 .append("svg:svg") 
 .data([data])
@@ -250,6 +247,7 @@ arcs.append("svg:text")
 })
 .attr("text-anchor", "middle") 
 .text(function(d, i) { return data[i].label; }); 
+}); //end of pie chart
 }
 $(function() {
 	$('#datetimepicker1').datetimepicker({

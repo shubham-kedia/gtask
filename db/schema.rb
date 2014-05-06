@@ -11,10 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140503173735) do
+ActiveRecord::Schema.define(version: 20140506195807) do
 
   create_table "barcharts", force: true do |t|
-    t.integer  "date",       limit: 8
+    t.string   "date",       null: false
     t.float    "jodhpur"
     t.float    "bikaner"
     t.float    "jaipur"
@@ -25,6 +25,13 @@ ActiveRecord::Schema.define(version: 20140503173735) do
   create_table "multilinecharts", force: true do |t|
     t.string   "month"
     t.float    "expenses"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "piecharts", force: true do |t|
+    t.string   "label"
+    t.integer  "value"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

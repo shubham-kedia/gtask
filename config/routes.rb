@@ -22,6 +22,7 @@ Gtask1::Application.routes.draw do
       collection do
         get 'barchart'
         get 'multilinechart'
+        get 'piechart'
         get 'test2'
         # get 'index'
       end

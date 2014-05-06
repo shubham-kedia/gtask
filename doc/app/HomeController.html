@@ -79,6 +79,8 @@
     
     <li ><a href="#method-i-multilinechart">#multilinechart</a>
     
+    <li ><a href="#method-i-piechart">#piechart</a>
+    
     <li ><a href="#method-i-test">#test</a>
     
   </ul>
@@ -212,6 +214,40 @@
         <span class="ruby-comment">#     format.js {render :json =&gt; {:data =&gt; @m}}</span>
         <span class="ruby-comment"># end</span>
         <span class="ruby-identifier">render</span> <span class="ruby-value">:text</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@m</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-piechart" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">piechart</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="piechart-source">
+            <pre><span class="ruby-comment"># File app/controllers/home_controller.rb, line 23</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">piechart</span>
+        <span class="ruby-ivar">@p</span> =<span class="ruby-constant">Piechart</span>.<span class="ruby-identifier">all</span>.<span class="ruby-identifier">select</span>(<span class="ruby-string">&#39;label,value&#39;</span>).<span class="ruby-identifier">to_json</span>
+        <span class="ruby-identifier">render</span> <span class="ruby-value">:text</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@p</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
           

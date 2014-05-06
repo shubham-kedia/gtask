@@ -20,4 +20,8 @@ class HomeController < ApplicationController
 		# end
 		render :text => @m
 	end
+	def piechart
+		@p =Piechart.all.select('label,value').to_json
+		render :text => @p
+	end
 end
