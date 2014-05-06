@@ -76,7 +76,8 @@
 <p>Ruby version</p>
 
 <pre>Currently its using Ruby version 2.1
-Current Rails version is Rails 4.0.2</pre>
+Current Rails version is Rails 4.0.2
+See the &lt;tt&gt;Resources&lt;/tt&gt; file for detailed information.</pre>
 </li><li>
 <p>System dependencies</p>
 
@@ -84,24 +85,69 @@ Current Rails version is Rails 4.0.2</pre>
 Rails Gem is required</pre>
 </li><li>
 <p>Configuration</p>
+
+<pre>Use the following commands to configure rails in your system:
+
+ sudo apt-get install ruby
+ sudo apt-get install rubygems
+ sudo gem install rubygems-update
+ sudo update_rubygems
+ sudo gem install webrick
+ sudo gem install mysql2
+ sudo gem install rails
+ sudo apt-get update ; sudo apt-get install curl -y
+
+        \curl -L https://get.rvm.io | bash -s stable
+        echo &#39;source ~/.rvm/scripts/rvm&#39; &gt;&gt; ~/.bash_aliases &amp;&amp; source ~/.bash_aliases
+        rvm requirements
+
+        sudo apt-get --no-install-recommends install build-essential openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev libgdbm-dev ncurses-dev automake libtool bison subversion pkg-config libffi-dev -y
+
+        rvm get head
+        rvm reload
+        rvm install ruby-2.1.1
+        rvm use ruby-2.1.1 --default
+        rvm rubygems current
+        gem install rails
+
+        Or You can use this following link to succesfully install rails gem
+        Install ruby and rails with rvm -&gt; 
+
+        https://www.digitalocean.com/community/articles/how-to-install-ruby-on-rails-on-ubuntu-12-04-lts-precise-pangolin-with-rvm
+
+use this to run rvm source in server:
+source $rvm_path/scripts/rvm\</pre>
 </li><li>
 <p>Database creation</p>
+
+<pre>For database initialization use rake db:setub
+ It will creat db , migrate it and seed it if any seed file is there.</pre>
 </li><li>
 <p>Database initialization</p>
+
+<pre>use rake db:migrate to run migations and use rake db:seed to seed the db.</pre>
 </li><li>
 <p>How to run the test suite</p>
 
-<pre>To run the rake suite use &quot;rake jasmine&quot;</pre>
+<pre>To run the rake suite use &quot;rake jasmine&quot;. It will automatically be running on port no 8888. We can config different port no from jasmine_helper.rb file.</pre>
 </li><li>
 <p>Services (job queues, cache servers, search engines, etc.)</p>
 </li><li>
 <p>Deployment instructions</p>
 
-<pre>For deployment use Capistrano with Passenger</pre>
-</li></ul>
+<pre>        For deployment use Capistrano with Passenger
 
-<p>Please feel free to use a different markup language if you do not plan to
-run <code>rake doc:app</code>.</p>
+        Install rails with passenger: -&gt;
+        https://www.digitalocean.com/community/articles/how-to-install-rails-apache-and-mysql-on-ubuntu-with-passenger
+
+        Add swap sapce:
+        https://www.digitalocean.com/community/articles/how-to-add-swap-on-ubuntu-12-04
+
+ More  structure information can be gathered about project is from &lt;tt&gt;doc&lt;/tt&gt; directory in your app root directory.
+Or can use &lt;tt&gt;rake doc:app&lt;/tt&gt; to create one.
+        Author:
+                Shubham</pre>
+</li></ul>
 </main>
 
 

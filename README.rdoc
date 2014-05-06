@@ -14,14 +14,14 @@
 * Configuration
 	Use the following commands to configure rails in your system:
 
-		sudo apt-get install ruby
-		sudo apt-get install rubygems
-		sudo gem install rubygems-update
-		sudo update_rubygems
-		sudo gem install webrick
-		sudo gem install mysql2
-		sudo gem install rails
-		sudo apt-get update ; sudo apt-get install curl -y
+	 sudo apt-get install ruby
+	 sudo apt-get install rubygems
+	 sudo gem install rubygems-update
+	 sudo update_rubygems
+	 sudo gem install webrick
+	 sudo gem install mysql2
+	 sudo gem install rails
+	 sudo apt-get update ; sudo apt-get install curl -y
 
 		\curl -L https://get.rvm.io | bash -s stable
 		echo 'source ~/.rvm/scripts/rvm' >> ~/.bash_aliases && source ~/.bash_aliases
@@ -41,8 +41,8 @@
 
 		https://www.digitalocean.com/community/articles/how-to-install-ruby-on-rails-on-ubuntu-12-04-lts-precise-pangolin-with-rvm
 
-use this to run rvm source in server:
-source $rvm_path/scripts/rvm\
+	use this to run rvm source in server:
+	source $rvm_path/scripts/rvm\
 
 * Database creation
 	For database initialization use rake db:setub
@@ -53,21 +53,21 @@ source $rvm_path/scripts/rvm\
 
 * How to run the test suite
 
-	To run the rake suite use "rake jasmine". It will automatically be running on port no 8888. We can config different port no from jasmine_helper.rb file.
+		To run the rake suite use "rake jasmine". It will automatically be running on port no 8888. We can config different port no from jasmine_helper.rb file.
 
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
 	
-	For deployment use Capistrano with Passenger
+		For deployment use Capistrano with Passenger
 
-	Install rails with passenger: ->
-	https://www.digitalocean.com/community/articles/how-to-install-rails-apache-and-mysql-on-ubuntu-with-passenger
+		Install rails with passenger: ->
+		https://www.digitalocean.com/community/articles/how-to-install-rails-apache-and-mysql-on-ubuntu-with-passenger
 
-	Add swap sapce:
-	https://www.digitalocean.com/community/articles/how-to-add-swap-on-ubuntu-12-04
+		Add swap sapce:
+		https://www.digitalocean.com/community/articles/how-to-add-swap-on-ubuntu-12-04
 
-More  structure information can be gathered about project is from <tt>doc</tt> directory in your app root directory.
-Or can use <tt>rake doc:app</tt> to create one.
-Author:
-Shubham
+	 More  structure information can be gathered about project is from <tt>doc</tt> directory in your app root directory.
+	Or can use <tt>rake doc:app</tt> to create one.
+		Author:
+			Shubham
