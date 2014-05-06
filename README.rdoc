@@ -15,12 +15,19 @@
 	Use the following commands to configure rails in your system:
 
 	 sudo apt-get install ruby
+
 	 sudo apt-get install rubygems
+
 	 sudo gem install rubygems-update
+
 	 sudo update_rubygems
+
 	 sudo gem install webrick
+
 	 sudo gem install mysql2
+
 	 sudo gem install rails
+	 
 	 sudo apt-get update ; sudo apt-get install curl -y
 
 		\curl -L https://get.rvm.io | bash -s stable
