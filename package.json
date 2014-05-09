@@ -14,21 +14,15 @@
         "type": "git",
         "url": "git://github.com/shubham-kedia/gtask.git"
         },
-        "dependencies": {
-          "bower": "1.3.x"
-          },
-          "scripts": {
-            "postinstall": "node_modules/.bin/bower install"
-            },
-          "keywords": [
-          "ruby",
-          "on",
-          "rails",
-          "app"
-          ],
-          "author": "shubham kedia",
-          "license": "BSD-2-Clause",
-          "bugs": {
-            "url": "https://github.com/shubham-kedia/gtask/issues"
-          }
+        "keywords": [
+        "ruby",
+        "on",
+        "rails",
+        "app"
+        ],
+        "author": "shubham kedia",
+        "license": "BSD-2-Clause",
+        "bugs": {
+          "url": "https://github.com/shubham-kedia/gtask/issues"
         }
+      }
