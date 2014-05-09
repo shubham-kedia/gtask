@@ -16,7 +16,7 @@
 //= require bootstrap.js
 //= require bootstrap-datetimepicker.min
 //= require jquery.scrollTo.min
-//= require /vendor/assets/bower_components/d3/d3.js
+//= require vendor/assets/bower_components/d3/d3.js
 //= require home
 //= require wow.min
 //= require jquery.nav
