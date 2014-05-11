@@ -1,7 +1,60 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+Barchart.create!([
+  {date: "Jul/13/2013", jodhpur: 63.4, bikaner: 62.7, jaipur: 72.2},
+  {date: "Aug/13/2013", jodhpur: 58.0, bikaner: 59.9, jaipur: 67.7},
+  {date: "Sep/13/2013", jodhpur: 53.3, bikaner: 59.1, jaipur: 69.4},
+  {date: "Oct/13/2013", jodhpur: 55.7, bikaner: 58.8, jaipur: 68.0},
+  {date: "Nov/13/2013", jodhpur: 64.2, bikaner: 58.7, jaipur: 72.4},
+  {date: "Dec/13/2013", jodhpur: 58.8, bikaner: 57.0, jaipur: 77.0},
+  {date: "Jan/13/2014", jodhpur: 57.0, bikaner: 56.5, jaipur: 82.0},
+  {date: "Feb/13/2014", jodhpur: 61.8, bikaner: 56.8, jaipur: 78.9},
+  {date: "Mar/13/2014", jodhpur: 69.3, bikaner: 56.7, jaipur: 68.8},
+  {date: "Apr/13/2014", jodhpur: 68.7, bikaner: 61.1, jaipur: 70.3},
+  {date: "May/13/2014", jodhpur: 61.8, bikaner: 61.5, jaipur: 75.3},
+  {date: "Jun/13/2014", jodhpur: 63.0, bikaner: 64.3, jaipur: 76.6},
+  {date: "Jul/13/2014", jodhpur: 66.9, bikaner: 67.1, jaipur: 66.6},
+  {date: "Aug/13/2014", jodhpur: 61.7, bikaner: 64.6, jaipur: 68.0},
+  {date: "Sep/13/2014", jodhpur: 61.8, bikaner: 61.6, jaipur: 70.6},
+  {date: "Oct/13/2014", jodhpur: 62.8, bikaner: 61.1, jaipur: 71.1},
+  {date: "Nov/13/2014", jodhpur: 60.8, bikaner: 59.2, jaipur: 70.0},
+  {date: "Dec/13/2014", jodhpur: 60.8, bikaner: 70.0, jaipur: 58.9},
+  {date: "Jan/13/2015", jodhpur: 62.1, bikaner: 58.9, jaipur: 61.6},
+  {date: "Feb/13/2015", jodhpur: 65.1, bikaner: 57.2, jaipur: 57.4},
+  {date: "Mar/13/2015", jodhpur: 55.6, bikaner: 56.4, jaipur: 64.3},
+  {date: "Apr/13/2015", jodhpur: 54.4, bikaner: 73.4, jaipur: 71.0},
+  {date: "May/13/2015", jodhpur: 54.4, bikaner: 50.1, jaipur: 54.4},
+  {date: "Jun/13/2015", jodhpur: 71.0, bikaner: 54.6, jaipur: 38.6},
+  {date: "Jul/13/2015", jodhpur: 73.0, bikaner: 44.2, jaipur: 57.9},
+  {date: "Aug/13/2015", jodhpur: 62.6, bikaner: 50.1, jaipur: 62.6},
+  {date: "Sep/13/2015", jodhpur: 50.1, bikaner: 54.4, jaipur: 42.5},
+  {date: "Oct/13/2015", jodhpur: 73.4, bikaner: 71.0, jaipur: 44.2},
+  {date: "Nov/13/2015", jodhpur: 38.6, bikaner: 73.0, jaipur: 54.6},
+  {date: "Dec/13/2015", jodhpur: 62.6, bikaner: 44.2, jaipur: 40.0},
+  {date: "Jan/13/2016", jodhpur: 54.6, bikaner: 49.6, jaipur: 73.0},
+  {date: "Feb/13/2016", jodhpur: 42.5, bikaner: 30.9, jaipur: 38.6},
+  {date: "Mar/13/2016", jodhpur: 54.4, bikaner: 43.8, jaipur: 65.1},
+  {date: "Apr/13/2016", jodhpur: 49.6, bikaner: 67.2, jaipur: 47.3},
+  {date: "May/13/2016", jodhpur: 30.9, bikaner: 65.1, jaipur: 67.2},
+  {date: "Jun/13/2016", jodhpur: 47.3, bikaner: 30.9, jaipur: 43.8},
+  {date: "Jul/13/2016", jodhpur: 65.1, bikaner: 67.2, jaipur: 49.6}
+])
+Multilinechart.create!([
+  {month: "Jul/13/2014", expenses: 33.9},
+  {month: "Aug/13/2014", expenses: 58.2},
+  {month: "Sep/13/2014", expenses: 79.4},
+  {month: "Oct/13/2014", expenses: 65.5},
+  {month: "Nov/13/2014", expenses: 76.06},
+  {month: "Dec/13/2014", expenses: 71.99},
+  {month: "Jan/14/2014", expenses: 80.9},
+  {month: "Feb/14/2014", expenses: 80.98},
+  {month: "Mar/14/2014", expenses: 73.0},
+  {month: "Apr/14/2014", expenses: 81.2},
+  {month: "May/14/2014", expenses: 93.8},
+  {month: "Jun/14/2014", expenses: 80.5}
+])
+Piechart.create!([
+  {label: "one", value: 20},
+  {label: "two", value: 30},
+  {label: "three", value: 20},
+  {label: "four", value: 10},
+  {label: "five", value: 20}
+])

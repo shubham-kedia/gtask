@@ -15,8 +15,8 @@
   stroke-width: 1.5px;
 }
 .slice text {
-font-size: 16pt;
-font-family: Arial;
+  font-size: 16pt;
+  font-family: Arial;
 }
 #barchart1,#barchart2{
   margin-left: -45px;
@@ -35,4 +35,14 @@ font-family: Arial;
 /*jasmine test cases css*/
 .html-reporter{
   background-color: white;
+}
+.login,.login-info{
+  color:white;
+}
+.login-info{
+  font-size:22px;
+}
+.form-group.login-box{
+  padding-left: 500px;
+  padding-right: 500px;
 }

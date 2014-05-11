@@ -1,12 +1,15 @@
 Gtask1::Application.routes.draw do
+  get '/',to:"home#index"
+  devise_for :users
+  mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   # get ':controller(/:action(/:id(.:format)))'
   # post ':controller(/:action(/:id(.:format)))'
+  root :to => 'home#index'
   mount JasmineRails::Engine => "/specs" if defined?(JasmineRails)
-  root 'home#index'
   get '/index' , to: 'home#index'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -18,16 +21,16 @@ Gtask1::Application.routes.draw do
   #   resources :products
 
   # Example resource route with options:
+  get ':controller(/:action(/:id(.:format)))'
     resources :home do
-      collection do
+      # collection do
         get 'barchart'
         get 'multilinechart'
         get 'piechart'
         get 'test2'
         # get 'index'
-      end
+      # end
     end
-  get ':controller(/:action(/:id(.:format)))'
 
   # Example resource route with sub-resources:
   #   resources :products do

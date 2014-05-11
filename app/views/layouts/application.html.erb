@@ -19,6 +19,8 @@
 	</div>
 	<%= render :partial => "layouts/header" %>
 	<%= yield %>
+	<% if user_signed_in? %>
 	<%= render :partial => "layouts/footer" %>
+	<%end%>
 </body>
 </html>

@@ -30,7 +30,9 @@ gem 'jbuilder', '~> 1.2'
 gem "bower-rails"
 gem "sprockets"
 gem 'jasmine'
-
+gem 'rails_admin'
+gem 'seed_dump'
+gem 'devise'
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
