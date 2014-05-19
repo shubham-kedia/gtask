@@ -1,6 +1,9 @@
 Gtask1::Application.routes.draw do
   get '/',to:"home#index"
-  devise_for :users
+  devise_for :users, controllers:{omniauth_callbacks: "omniauth_callbacks"}
+  devise_scope :users do
+    root :to => 'devise/registrations#new'
+  end
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -8,7 +11,7 @@ Gtask1::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # get ':controller(/:action(/:id(.:format)))'
   # post ':controller(/:action(/:id(.:format)))'
-  root :to => 'home#index'
+  # root :to => 'home#index'
   mount JasmineRails::Engine => "/specs" if defined?(JasmineRails)
   get '/index' , to: 'home#index'
   # Example of regular route:

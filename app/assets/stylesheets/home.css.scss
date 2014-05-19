@@ -42,7 +42,42 @@
 .login-info{
   font-size:22px;
 }
-.form-group.login-box{
+#signin,#signup {
+  width: 30%;
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+  #signin,#signup {
+    width: 30%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  #signin,#signup{
+    width: 30%;
+  }
+}
+@media (max-width: 1024px) {
+  #signin,#signup{
+    width: 40%;
+  }
+}
+@media (max-width: 767px) {
+  #signin,#signup{
+    width: 60%;
+  }
+}
+@media (max-width: 480px) {
+  #signin,#signup{
+    width: 70%;
+  }
+}
+@media (max-width: 320px) {
+  #signin,#signup{
+    width: 100%;
+  }
+}
+/*.form-group.login-box{
   padding-left: 500px;
   padding-right: 500px;
-}
+}*/

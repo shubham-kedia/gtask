@@ -33,6 +33,8 @@ gem 'jasmine'
 gem 'rails_admin'
 gem 'seed_dump'
 gem 'devise'
+gem 'omniauth'
+gem 'omniauth-facebook'
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
